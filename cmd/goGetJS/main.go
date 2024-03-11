@@ -113,7 +113,7 @@ func main() {
 	app.assertErrorToNil(err)
 
 	// handling situations when src doesn't end with .js
-	fName := regexp.MustCompile(`[\w-&]+(\.js)?$`)
+	fName := regexp.MustCompile(`[\.\w-&]+(\.js)?$`)
 
 	// extract, search, and write javascript files with src
 	var g errgroup.Group
